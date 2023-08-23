@@ -11,8 +11,7 @@ The Monty Interpreter is a tool that processes Monty byte code files and execute
 - [Stack and Queue Concepts](#stack-and-queue-concepts)
 - [Common Use Cases](#common-use-cases)
 - [Global Variables Usage](#global-variables-usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Team](#team)
 
 ## Introduction
 
