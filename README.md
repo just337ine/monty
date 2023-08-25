@@ -28,10 +28,17 @@ Monty Interpreter is designed to execute Monty byte code files (usually with a `
 ## Usage
 
 1. Clone this repository to your local machine.
-2. Compile and build the Monty Interpreter.
    ```sh
    git clone https://github.com/ugwujustine/monty.git
    ```
+2. Compile and build the Monty Interpreter.
+   ```sh
+   gcc -Wall -Werror -Wextra -pedantic *.c -o monty
+   ```
+3. Run.
+    ```sh
+    ./monty <file.m>
+    ```
 
 ## Instructions
 
