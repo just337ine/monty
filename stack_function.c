@@ -7,8 +7,8 @@
  */
 void _push(stack_t **stack, unsigned int line_number)
 {
-	(void)line_number;
 	stack_t *top;
+	(void)line_number;
 	(void)line_number;
 
 	/* Allocate memory for a new stack element */
@@ -36,8 +36,8 @@ void _push(stack_t **stack, unsigned int line_number)
  */
 void _pall(stack_t **stack, unsigned int line_number)
 {
-	(void)line_number;
 	stack_t *runner;
+	(void)line_number;
 
 	runner = *stack;
 	while (runner)

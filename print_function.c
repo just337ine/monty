@@ -26,7 +26,7 @@ void _pchar(stack_t **stack, unsigned int line_number)
 		fprintf(stderr, "L%d: can't pchar, stack empty\n", line_number);
 		free(global_v.buffer);
 		fclose(global_v.file);
-		free_dlistint(*stack);
+		free_int(*stack);
 		exit(EXIT_FAILURE);
 	}
 
@@ -36,7 +36,7 @@ void _pchar(stack_t **stack, unsigned int line_number)
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", line_number);
 		free(global_v.buffer);
 		fclose(global_v.file);
-		free_dlistint(*stack);
+		free_int(*stack);
 		exit(EXIT_FAILURE);
 	}
 	putchar(val);
@@ -52,6 +52,7 @@ void _pchar(stack_t **stack, unsigned int line_number)
 void _pstr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = *stack;
+	char num_str[12];
 	int c = 0;
 	(void)line_number;
 
@@ -59,7 +60,6 @@ void _pstr(stack_t **stack, unsigned int line_number)
 	while (tmp)
 	{
 		c = tmp->n;
-		char num_str[12];
 
 		sprintf(num_str, "%d", c);
 		if (!is_integer(num_str))
